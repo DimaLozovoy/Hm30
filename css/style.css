@@ -1,17 +1,16 @@
+
 .squire {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 0; bottom: 0; right: 0; left: 0;
-    margin: auto;
     width: 100px;
     height: 100px;
     background-color: red;  
     animation-name: squire-movement;
     animation-iteration-count: infinite;
     animation-duration: 8s;
-    /* animation: squire-movement, infinite, 8s; */
 }
 @keyframes squire-movement {
     0% {
@@ -22,14 +21,12 @@
        background-color: blue;
     }
     50% {
-        transform: translateY(100px);
-        transform: translateX(100px);
+        transform: translate(100px, 100px);
         background-color: green;
     }
     75% {
         background-color: yellow;
-        transform: translateY(0);
-        transform: translateX(50px);
+        transform: translate(100px, 0);
     }
     100% {
         background-color: red;
